@@ -18,7 +18,7 @@ public class ResourceArrayList implements ResourceList {
     @Override
     public void truncate(ResourceObject resource) {
         int count =resources.indexOf(resource);
-        for(int i=0; i<resources.size(); i++){
+        for(int i=0; i<resources.size() - count; i++){
             resources.remove(count);
         }
     }
